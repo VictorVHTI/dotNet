@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Training.Data.Models
+namespace Training.DTO
 {
     public class Order
     {
         public Guid Id { get; set; }
-        public Guid UserId { get; set; }
+        public Guid UserID { get; set; }
         //public IList<OrderProduct> OrderProducts { get; set; }
     }
 }

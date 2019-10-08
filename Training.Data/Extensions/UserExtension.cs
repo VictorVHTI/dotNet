@@ -9,8 +9,7 @@ namespace Training.Data.Extensions
         public static DTO.User ToDTO(this Models.User u){
             return new DTO.User
             {
-                Id = u.Id.ToString(),
-                Email = u.Email,
+                Id = u.Id,
                 FullName = u.FullName
             };
         }
@@ -19,11 +18,8 @@ namespace Training.Data.Extensions
         {
             return new Models.User
             {
-                Id = Guid.Parse(u.Id),
-                Email = u.Email,
+                Id = u.Id,
                 FullName = u.FullName,
-                Gender = u.Gender,
-
             };
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Training.Data.Models
+namespace Training.DTO
 {
     public class OrderProduct
     {
@@ -11,6 +11,5 @@ namespace Training.Data.Models
         public int Quantity { get; set; }
         public Order Order { get; set; }
         public Product Product { get; set; }
-
     }
 }
